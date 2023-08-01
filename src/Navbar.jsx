@@ -8,7 +8,7 @@ import Streaming from './components/Streaming'
 
 export default function Navbar() {
     return (
-            <BrowserRouter>
+            <>
                 <nav className='nav'>
                     <Link to='/' className='site-title'>SPUNK</Link>
                     <Link to='/PlayerCard' className='links'>Player Card</Link>
@@ -20,13 +20,11 @@ export default function Navbar() {
                     <Route path="/" element={<App />} />
                     <Route path="/PlayerCard" element={<PlayerCard />} />
                     <Route path="/Collections" element={<Collections />} />
-                    <Route path="Streaming" element={<Streaming />} />
-                </Routes>
-            </BrowserRouter>
-
-
-
+                    <Route path="Streaming" element={<Streaming />} /> 
+                </Routes> 
+            </>
 
     ) 
     
 }
+
