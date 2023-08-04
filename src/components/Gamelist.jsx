@@ -15,7 +15,7 @@ export default [
         },
         { 
             id: "3", name:"Bioshock Infinite", rating: "Mature", release: "2013", genre: "FPS, Action, Adventure", 
-            description: "Indebted to the wrong people, with his life on the line, veteran of the U.S. Cavalry and now hired gun, Booker DeWitt has only one opportunity to wipe his slate clean. He must rescue Elizabeth, a mysterious girl imprisoned since childhood and locked up in the flying city of Columbia. Forced to trust one another, Booker and Elizabeth form a powerful bond during their daring escape. Together, they learn to harness an expanding arsenal of weapons and abilities, as they fight on zeppelins in the clouds, along high-speed Sky-Lines, and down in the streets of Columbia, all while surviving the threats of the air-city and uncovering its dark secret.", 
+            description: "Indebted to the wrong people, with his life on the line, veteran of the U.S. Cavalry and now hired gun, Booker DeWitt has only one opportunity to wipe his slate clean. He must rescue Elizabeth, a mysterious girl imprisoned since childhood and locked up in the flying city of Columbia.", 
             imageURL: "https://m.media-amazon.com/images/M/MV5BMTU3NTYwNDg0NV5BMl5BanBnXkFtZTcwNzAxMTQ2OA@@._V1_FMjpg_UX1000_.jpg", 
             alt: "A brunette woman in a blue dress stands next to a man in a tie as a large airship comes crashing down behind them, they look like they are fighting of enemies.",
             platforms: "PC, Playstation, XBOX, Switch"
@@ -23,7 +23,7 @@ export default [
         { 
             id: "4", name:"Choo Choo Charles", rating: "NA", release: "2022", genre: "Survival, Horror", 
             description: "Navigate an open-world island in an old train, upgrade it over time, and use it to fight an evil spider train named Charles.", 
-            imageURL: "https://cdn.akamai.steamstatic.com/steam/apps/1766740/capsule_616x353.jpg?t=1676616328", 
+            imageURL: "https://upload.wikimedia.org/wikipedia/en/7/7f/Choo_Choo_Charles.jpg", 
             alt: "A large red train with hollow eyes, multitudes of sharp teeth and eight long spiders legs coming towards you.",
             platforms: "PC"
         },
@@ -70,14 +70,14 @@ export default [
             platforms: "PC, Playstation, XBOX, Switch, Moblie"
         },
         { 
-            id: "", name:"", rating: "", release: "", genre: "", 
+            id: "11", name:"", rating: "", release: "", genre: "", 
             description: "", 
             imageURL: "", 
             alt: "",
             platforms: ""
         },
         { 
-            id: "", name:"", rating: "", release: "", genre: "", 
+            id: "12", name:"", rating: "", release: "", genre: "", 
             description: "", 
             imageURL: "", 
             alt: "",

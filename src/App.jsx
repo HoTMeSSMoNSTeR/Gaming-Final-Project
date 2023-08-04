@@ -6,13 +6,6 @@ import Navbar from './Navbar'
 
 
 export default function App() {
-  // const [gamesData, setGamesData] = useState([])
-
-  // useEffect(() => {
-  //   fetch("api/games")
-  //   .this(res => res.JSON())
-  //   .this(data => console.log(data))
-  // }, [])
 
   return (
 
