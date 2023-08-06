@@ -5,9 +5,9 @@ export default function Wishlist() {
     const [newItem, setNewItem] = useState("")
     const [myWishlist, setmyWishlist] = useState([])
 
+
     function handleSubmit(e) {
-        e.preventDefault();
-        const data={newItem}
+        e.preventDefault(); 
 
         setmyWishlist((currentmyWishlist) => {
             return [
@@ -22,8 +22,9 @@ function toggleList(id, completed) {
     setmyWishlist(currentmyWishlist => {
         return currentmyWishlist.map(myWishlist => {
             if(myWishlist.id === id) {
-                return { ...myWishlist, completed}
+                return { ...myWishlist, completed }
             }
+            return myWishlist
         })
     })
 }
@@ -44,7 +45,7 @@ function deleteItem(id) {
                 type='text'
                 id='item'
                 value={newItem}
-                onChange={(e) => setNewItem(e.target.value)}>
+                onChange={e => setNewItem(e.target.value)}>
                 </input>
             </div>
             <button
@@ -60,15 +61,15 @@ function deleteItem(id) {
                     <li key={myWishlist.id} className='wishlist-item'>
                         <label>
                             <input type="checkbox" 
-                            checked={setmyWishlist.completed}
+                            checked={myWishlist.completed}
                             onChange={e => toggleList(myWishlist.id, e.target.checked)} />
                             {myWishlist.title}
                         </label>
                 <button
                 onClick={() => deleteItem(myWishlist.id)} 
                 className='del-btn'>
-                    DELETE
-                 </button>
+                    DELETE  
+                    </button>
             </li>
                 )
             }) 
