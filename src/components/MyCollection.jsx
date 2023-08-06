@@ -22,9 +22,10 @@ const handleSubmit = (e) => {
 
     return (
         <div className='mb-3'>
-            <h2>Game Collections</h2>
+            <h1>Game Collections</h1>
         <form className='add-game-form'
             onSubmit={handleSubmit}>
+                <h5>Add to my game list...</h5>
                 <label htmlFor='my-game-form'>Name of Game:</label>
                 <input
                 id='my-game-form'

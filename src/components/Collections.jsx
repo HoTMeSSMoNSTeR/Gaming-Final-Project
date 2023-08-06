@@ -1,10 +1,14 @@
 import React from 'react';
 import MyCollection from './MyCollection';
+import Wishlist from './Wishlist'
 
 export default function Collections() {
-     <h1>Collections</h1>
      return (
+        <div className='collection-container'>
         <MyCollection />
+        <Wishlist />
+        </div>
+        
      )
 }
 

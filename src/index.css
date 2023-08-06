@@ -22,6 +22,10 @@ h4 {
   margin-left: 5rem;
 }
 
+label {
+  font-family: 'Rubik', sans-serif;
+}
+
 
 .all-buttons {
   margin: 0.5rem;
@@ -36,6 +40,19 @@ h4 {
   border: #1a1a1a;
   box-shadow:  2px 2px 4px black;
   text-shadow: #1a1a1a;
+}
+
+.del-btn {
+  background-color: transparent;
+  border: 2px rgb(173, 2, 2);
+  box-shadow: 0 0 7px red;
+  color: rgb(173, 2, 2);
+  text-shadow: red;
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 3rem;
+  font-size: xx-small;
+  margin-left: 0.75rem;
 }
 
 .flex-container {
@@ -123,19 +140,35 @@ a {
   color: #613aad;
 }
 
+.collection-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .my-game-form {
   font-family: 'Rubik', sans-serif;
 }
 
 .add-game-form {
   width: 20rem;
-  margin-left: 10rem;
+  margin-left: auto;
   margin-top: 5rem;
   margin-bottom: 5rem;
   background-image: linear-gradient(to top left, #1a1a1a, #646cff);
   box-shadow: 5px 5px 10px black;
   color: aliceblue;
   padding: 1rem;
+}
+
+.new-item-form {
+  margin-top: 5rem;
+  width: 20rem;
+  height: 15rem;
+  padding: 2rem;
+  font-size: larger;
+  color: #646cff;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
 .see-what-i-type {
@@ -149,3 +182,8 @@ a {
   font-family: 'Rubik', sans-serif;
 }
 
+.wishlist-item {
+  color: aliceblue;
+  list-style: none;
+  text-align: left;
+}
