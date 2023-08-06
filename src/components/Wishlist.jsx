@@ -1,22 +1,19 @@
 import React from 'react'
 import { useState } from 'react'
+import WishlistForm from './WishlistForm';
 
 export default function Wishlist() {
-    const [newItem, setNewItem] = useState("")
     const [myWishlist, setmyWishlist] = useState([])
 
-    function handleSubmit(e) {
-        e.preventDefault();
-        const data={newItem}
+function addWishItem(title) {
+    setmyWishlist((currentmyWishlist) => {
+        return [
+            ...currentmyWishlist,
+            { id: crypto.randomUUID(), title, completed:false},
+        ]
+    })
+}
 
-        setmyWishlist((currentmyWishlist) => {
-            return [
-                ...currentmyWishlist,
-                { id: crypto.randomUUID(), title:newItem, completed:false},
-            ]
-        })
-        setNewItem("")
-    }
 
 function toggleList(id, completed) {
     setmyWishlist(currentmyWishlist => {
@@ -36,23 +33,7 @@ function deleteItem(id) {
 
     return(
         <div>
-        <form className='new-item-form'>
-            <div>
-                <label htmlFor='item' className='form-label'>New Wishlist Item</label>
-                <input
-                className='form-control-lg'
-                type='text'
-                id='item'
-                value={newItem}
-                onChange={(e) => setNewItem(e.target.value)}>
-                </input>
-            </div>
-            <button
-            onClick={handleSubmit} 
-            className='all-buttons'>
-                Wish!
-            </button>
-        </form>
+            <WishlistForm onSubmit={addWishItem} />
         <h4>Wishlist...</h4>
         <ul>
             {myWishlist.map(myWishlist => {
