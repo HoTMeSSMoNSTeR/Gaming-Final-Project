@@ -10,7 +10,7 @@ import Home from './components/Home'
 export default function Navbar() {
     return (
             <>
-                <nav className='nav'>
+                <nav className='navbar navbar-expand'>
                     <Link to='/Home' className='site-title'>SPUNK</Link>
                     <Link to='/PlayerCard' className='links'>Player Card</Link>
                     <Link to='/Collections' className='links'>Collections</Link>

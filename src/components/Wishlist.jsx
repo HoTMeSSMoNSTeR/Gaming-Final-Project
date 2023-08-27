@@ -4,11 +4,8 @@ import { useState } from 'react'
 export default function Wishlist() {
     const [newItem, setNewItem] = useState("")
     const [myWishlist, setmyWishlist] = useState([])
-
-
     function handleSubmit(e) {
         e.preventDefault(); 
-
         setmyWishlist((currentmyWishlist) => {
             return [
                 ...currentmyWishlist,
@@ -17,7 +14,6 @@ export default function Wishlist() {
         })
         setNewItem("")
     }
-
 function toggleList(id, completed) {
     setmyWishlist(currentmyWishlist => {
         return currentmyWishlist.map(myWishlist => {
@@ -28,7 +24,6 @@ function toggleList(id, completed) {
         })
     })
 }
-
 function deleteItem(id) {
     setmyWishlist(currentmyWishlist => {
         return currentmyWishlist.filter(myWishlist => myWishlist.id !== id) 
