@@ -17,7 +17,7 @@ export default function Navbar() {
                     <Link to='/PlayerCard' className='links'>Player Card</Link>
                     <Link to='/Collections' className='links'>Collections</Link>
                     <Link to='/Streaming' className='links'>Streaming</Link>
-                    <Link to='https://www.twitch.tv/' className='links'>Head to TWITCH</Link>
+                    <Link to='https://www.twitch.tv/' className='links' target={'_blank'}>Head to TWITCH</Link>
 
                 </nav>
                 <Routes>
